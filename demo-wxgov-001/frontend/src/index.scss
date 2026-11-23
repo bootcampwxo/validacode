@@ -1,0 +1,69 @@
+// Carbon Design System v11 — global styles
+// NOTE: Carbon MCP token was placeholder during generation.
+// These imports follow carbondesignsystem.com docs (unverified via MCP).
+// Update token in .bob/mcp.json and re-run carbon-mcp docs_search to verify.
+
+// 1. Carbon reset (must come first)
+@use '@carbon/styles/scss/reset';
+
+// 2. Carbon type scale
+@use '@carbon/styles/scss/type' as *;
+
+// 3. All Carbon component styles via the main react package
+@use '@carbon/react';
+
+// 4. IBM Plex fonts
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;600&display=swap');
+
+// 5. Global overrides
+html, body, #root {
+  height: 100%;
+  background-color: var(--cds-background, #161616);
+  color: var(--cds-text-primary, #f4f4f4);
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+// 6. Demo-specific utility classes
+.demo-page {
+  padding: 1rem 1.5rem 3rem;
+  min-height: calc(100vh - 48px);
+}
+
+.demo-section-title {
+  color: var(--cds-text-primary, #f4f4f4);
+  margin-bottom: 1.5rem;
+}
+
+.governance-status-normal {
+  color: var(--cds-support-success, #42be65);
+}
+
+.governance-status-alert {
+  color: var(--cds-support-warning, #f1c21b);
+}
+
+.governance-status-critical {
+  color: var(--cds-support-error, #fa4d56);
+}
+
+.kpi-card-left-border-success {
+  border-left: 4px solid var(--cds-support-success, #42be65);
+}
+
+.kpi-card-left-border-warning {
+  border-left: 4px solid var(--cds-support-warning, #f1c21b);
+}
+
+.kpi-card-left-border-info {
+  border-left: 4px solid var(--cds-link-primary, #78a9ff);
+}
+
+.trace-panel {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+  background: var(--cds-layer, #262626);
+  padding: 1rem;
+  border-radius: 0;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}

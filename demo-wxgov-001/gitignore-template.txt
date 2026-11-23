@@ -1,0 +1,15 @@
+# Rename this file to .gitignore after cloning
+.env
+*.env
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+node_modules/
+dist/
+build/
+*.log
+.DS_Store
+*.db
+*.sqlite

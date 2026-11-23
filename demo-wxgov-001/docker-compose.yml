@@ -1,0 +1,32 @@
+# DEPLOY_TARGET: local
+# BUILD_ARCH: arm64
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: ../Dockerfile.backend
+      platforms:
+        - linux/amd64
+    ports:
+      - "8000:8000"
+    environment:
+      - DEMO_MODE=mock
+    env_file:
+      - .env
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8000/api/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: ../Dockerfile.frontend
+      platforms:
+        - linux/amd64
+    ports:
+      - "3000:80"
+    depends_on:
+      backend:
+        condition: service_healthy

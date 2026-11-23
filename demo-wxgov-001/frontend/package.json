@@ -1,0 +1,29 @@
+{
+  "name": "demo-wxgov-001-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .js,.jsx"
+  },
+  "dependencies": {
+    "@carbon/react": "^1.71.0",
+    "@carbon/icons-react": "^11.52.0",
+    "@carbon/charts-react": "^1.27.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "axios": "^1.7.9",
+    "mermaid": "^11.4.1",
+    "d3": "^7.9.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.3",
+    "sass": "^1.82.0",
+    "eslint": "^9.16.0"
+  }
+}

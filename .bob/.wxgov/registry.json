@@ -1,0 +1,47 @@
+{
+  "agents": {},
+  "llms": {},
+  "mcpServers": {
+    "d1f00c860160043ac94828c74fc92dbbd9fc1f83c82d3d83b57d76a9f03c8be5": {
+      "created_at": "2026-11-13T13:10:06.963Z",
+      "file": "canario/.bob/mcp.json",
+      "id": "d1f00c860160043ac94828c74fc92dbbd9fc1f83c82d3d83b57d76a9f03c8be5",
+      "name": "bob-marketplace",
+      "start_line": 3,
+      "structural_fingerprint": "fc8eedeed85bb52395d4d07b90b2f2822d1bb9ad3e8232b84a5e78b250431ae4",
+      "updated_at": "2026-11-13T13:10:06.963Z",
+      "version": "1.0.0"
+    },
+    "00661827b18c1d686cc47bc4bdee41f25fed195a8738ff9626371204882ab152": {
+      "created_at": "2026-11-17T12:51:44.994Z",
+      "file": "canario/.bob/mcp.json",
+      "id": "00661827b18c1d686cc47bc4bdee41f25fed195a8738ff9626371204882ab152",
+      "name": "techzone",
+      "start_line": 16,
+      "structural_fingerprint": "5ca45b1bae5ea522fbd6cdfa25194dc480cbdd305c1d9f568b2dea772310a0a0",
+      "updated_at": "2026-11-17T12:51:44.994Z",
+      "version": "1.0.0"
+    },
+    "4ba779e48c8d682fa379409f1268af7be59bb6bec82f8264d7c6d0abcf880911": {
+      "created_at": "2026-11-17T12:51:44.994Z",
+      "file": "canario/.bob/mcp.json",
+      "id": "4ba779e48c8d682fa379409f1268af7be59bb6bec82f8264d7c6d0abcf880911",
+      "name": "watsonx-orchestrate-docs",
+      "start_line": 41,
+      "structural_fingerprint": "caad36af8f7f7c0e96b7c38a18129ed5a409f1bb58a1c4cdabc2f1abf77a4a49",
+      "updated_at": "2026-11-17T12:51:44.994Z",
+      "version": "1.0.0"
+    },
+    "4f0d13f1960eecd9de1b780fe112e206f714e592a9959c09d3a6f5528ee1dc3f": {
+      "created_at": "2026-11-17T12:51:44.994Z",
+      "file": "canario/.bob/mcp.json",
+      "id": "4f0d13f1960eecd9de1b780fe112e206f714e592a9959c09d3a6f5528ee1dc3f",
+      "name": "carbon-mcp",
+      "start_line": 33,
+      "structural_fingerprint": "a9a79d82b6489282b51daa3c70499c8ec60b815dcb03f261e73600deca87357c",
+      "updated_at": "2026-11-17T12:51:44.994Z",
+      "version": "1.0.0"
+    }
+  },
+  "tools": {}
+}

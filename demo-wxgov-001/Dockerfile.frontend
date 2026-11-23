@@ -1,0 +1,14 @@
+# DEPLOY_TARGET: local
+# BUILD_ARCH: arm64
+# Build on native (arm64) arch for speed; runtime pinned to amd64 for portability
+
+FROM --platform=$BUILDPLATFORM node:20-alpine AS builder
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
+
+FROM --platform=linux/amd64 nginx:1.27-alpine
+COPY --from=builder /app/dist /usr/share/nginx/html
+EXPOSE 80
