@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: reembolso_app
+    restart: unless-stopped
+    ports:
+      - "${PORT:-3000}:3000"
+    environment:
+      - PORT=3000
+      - NODE_ENV=production
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres_secure_pass_2026
+      - DB_NAME=reembolso_db
+      - JWT_SECRET=super_secret_jwt_key_reembolso_despesas_2026_seguro
+      - JWT_REFRESH_SECRET=super_secret_refresh_jwt_key_reembolso_2026
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - reembolso_net
+    volumes:
+      - uploads_data:/app/uploads
+      - logs_data:/app/logs
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: reembolso_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres_secure_pass_2026
+      POSTGRES_DB: reembolso_db
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - reembolso_net
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d reembolso_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+networks:
+  reembolso_net:
+    driver: bridge
+
+volumes:
+  pgdata:
+  uploads_data:
+  logs_data:
