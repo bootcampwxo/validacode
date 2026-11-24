@@ -41,6 +41,46 @@
       "structural_fingerprint": "a9a79d82b6489282b51daa3c70499c8ec60b815dcb03f261e73600deca87357c",
       "updated_at": "2026-11-17T12:51:44.994Z",
       "version": "1.0.0"
+    },
+    "0dd7880cdff279eb08c64599a987af242db3c20202289215144cf35484af872d": {
+      "created_at": "2026-11-24T12:01:58.067Z",
+      "file": "canario/.bob/mcp.json",
+      "id": "0dd7880cdff279eb08c64599a987af242db3c20202289215144cf35484af872d",
+      "name": "techzone",
+      "start_line": 16,
+      "structural_fingerprint": "5ca45b1bae5ea522fbd6cdfa25194dc480cbdd305c1d9f568b2dea772310a0a0",
+      "updated_at": "2026-11-24T12:01:58.067Z",
+      "version": "1.0.0"
+    },
+    "6a88fe01d056577eac6684de5989ddd68f102d47210b843faa8ddb8afc9bbba6": {
+      "created_at": "2026-11-24T12:01:58.067Z",
+      "file": "canario/.bob/mcp.json",
+      "id": "6a88fe01d056577eac6684de5989ddd68f102d47210b843faa8ddb8afc9bbba6",
+      "name": "bob-marketplace",
+      "start_line": 3,
+      "structural_fingerprint": "fc8eedeed85bb52395d4d07b90b2f2822d1bb9ad3e8232b84a5e78b250431ae4",
+      "updated_at": "2026-11-24T12:01:58.067Z",
+      "version": "1.0.0"
+    },
+    "c3a670e0a8124cb6eea7653c634c248ae26d4f8df373ed9540472da22860b06d": {
+      "created_at": "2026-11-24T12:01:58.067Z",
+      "file": "canario/.bob/mcp.json",
+      "id": "c3a670e0a8124cb6eea7653c634c248ae26d4f8df373ed9540472da22860b06d",
+      "name": "carbon-mcp",
+      "start_line": 33,
+      "structural_fingerprint": "a9a79d82b6489282b51daa3c70499c8ec60b815dcb03f261e73600deca87357c",
+      "updated_at": "2026-11-24T12:01:58.067Z",
+      "version": "1.0.0"
+    },
+    "e4cf51d36c576484e6a81121c0c452e5d72ba84eeab63d1fb5e12970262fc49f": {
+      "created_at": "2026-11-24T12:01:58.067Z",
+      "file": "canario/.bob/mcp.json",
+      "id": "e4cf51d36c576484e6a81121c0c452e5d72ba84eeab63d1fb5e12970262fc49f",
+      "name": "watsonx-orchestrate-docs",
+      "start_line": 41,
+      "structural_fingerprint": "caad36af8f7f7c0e96b7c38a18129ed5a409f1bb58a1c4cdabc2f1abf77a4a49",
+      "updated_at": "2026-11-24T12:01:58.067Z",
+      "version": "1.0.0"
     }
   },
   "tools": {}
